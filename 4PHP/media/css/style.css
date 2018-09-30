@@ -1,0 +1,254 @@
+﻿body {
+    margin:0 auto;
+    padding:0;
+    background-color: #ccc;
+    font-family: Arial, sans-serif;
+}
+
+#wrapper {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+	margin: 0 auto;
+	width: 100%;
+	height: 200px;
+	background: url(../img/bkg.jpg);
+}
+
+.header_logo {
+    float: left;
+    width: 240px;
+    padding: 30px 0 0 0;
+    margin-left: 40px;
+}
+
+.logo_img {
+    width: 240px;
+	height: 140px; 
+}
+
+.adress {
+    text-align: center;
+    width: 300px;
+}
+
+.header_adress {
+    float: left;
+    margin-left: 450px;
+    padding-top: 40px;
+}
+
+.adress_h1 {
+    font-size: 24px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.adress_p {
+    margin-bottom: 10px;
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+form[name="search"] {
+    padding-top: 125px;
+    width: 385px;
+}
+
+.form-control {font-size: 20px;}
+
+.nav {
+	margin: 0 auto;
+    padding-left: 400px;
+	width: 100%;
+    height: 50px;
+    background-color: #111;
+}
+
+.nav_link {
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 0;
+	color: #f2f2f2;
+	text-align: center;
+	margin-right: 40px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.nav_link:hover {
+    color: white;
+    text-shadow: 0px 0px 15px #35c7ed;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.aside {
+    float: left;
+    padding: 20px 10px 5px 10px;
+    width: 320px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #bbb;
+}
+
+.submenu_link {
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.aside_market{
+    padding-top: 30px;
+    height: 400px;
+}
+
+.market {text-align: center;}
+
+.aside_weather {padding: 60px 0 23px 0;}
+
+.section {
+    float: right;
+    padding: 35px 40px 35px 40px;
+    margin: 0 auto;
+    width: 1280px;;
+    background-color: #f2f2f2; 
+}
+
+.section_text {margin-bottom: 28px;}
+
+.section_text:last-child {margin: 0;}
+
+
+.text_h1 {
+    margin: 0 0 15px  10px;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #337ab7;
+}
+
+.text_p {
+    font-size: 18px;
+    color: #999;
+    line-height: 22px;
+}
+
+.section_images {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 320px;
+}
+
+.items-img {
+    box-shadow: 0px 6px 10px 0px #000;
+}
+
+.items-img:hover {
+    transform: scale(1.05);
+}
+
+.items_h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.footer {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
+    background-color: #2d2d2d;
+    border-top: 6px solid #888;
+}
+
+.footer_copyright {
+    float: left;
+    padding-top: 40px;
+    margin-left: 40px;
+    width: 170px;
+}
+
+.copyright_text{
+    display: block;
+    color: #888;
+    font-size: 22px;
+    width: 170px;
+}
+
+.footer_menu {
+    float: left;
+    width: 200px;
+    padding-top: 40px;
+    margin-left: 500px;
+}
+
+.fmenu_title {
+    margin-bottom: 15px;
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    text-transform: uppercase;
+    border-bottom: 1px solid #888;
+}
+
+.fmenu_left {
+    float: left;
+    width: 100px;
+}
+
+.fmenu_right {
+    float: right;
+    width: 100px;
+}
+
+.map_link {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #888;
+}
+
+.footer_socialnet {
+    float: right;
+    padding-top: 40px;
+    margin-right: 400px;
+}
+
+.socialnet {
+    width: 180px;
+    height: 100px;
+}
+
+.socialnet_h1 {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #888;
+}
+
+.socialnet_logo {
+    width: 50px;
+    height: 50px;  
+}
+.socialnet_logo:hover {
+    transform: rotate(5deg);
+}
+.socialnet_logo-scale {
+    width: 70px;
+    height: 50px; 
+}
+.socialnet_logo-scale:hover {
+     transform: rotate(5deg);
+}
