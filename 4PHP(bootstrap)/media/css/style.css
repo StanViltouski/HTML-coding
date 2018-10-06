@@ -40,14 +40,14 @@
 
 #nav {
     margin: 0;
-    padding: 0 5% 0 20%;
+    padding: 0 5% 0 26%;
     max-width: 100%;
 }
 
 .nav_list {
     padding: 16px 0 16px 16px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .nav_list a, #nav_list-hover a {
