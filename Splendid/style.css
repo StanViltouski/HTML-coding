@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    width: 100%;
+    font-family: 'Baskerville Old Face';
+}
+
+
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.top {
+    width: 100%;
+    
+}
+
+.item {
+    float: right;
+    margin-top: 10px;
+    width: 30%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 0;
+    margin: 0 0 0 5%;
+    list-style: none;
+    font-size: 18px;
+    color: #926781;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.main {
+   width: 100%; 
+    margin-top: 40px;
+}
+
+
+.title img {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+}
+
+h3 {
+     color: #926781;
+}
+
+.content {
+    float: left;
+    margin-top: 40px;
+    
+}
+
+.content img {
+    width: 90%;
+}
+
+.user, .front, .ebook, .further {
+   float: left;
+    width: 25%;
+    height: 470px;
+}
+
+.user h3, .front h3, .ebook h3, .further h3 {
+    margin-left: 5%;
+    font-size: 18px;
+} 
+.user p, .front p, .ebook p, .further p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.posts {
+    clear: both;
+    float: left;
+    background: #e3ebe3;
+}
+
+.posts img {
+    float: left;
+    margin-top: 8%;
+    width:30%;
+    
+}
+
+h2 {
+    float: left;
+    width: 50%;
+    margin: 0;
+    margin-top: 6%;
+    margin-left: 5%;
+    color: #7e7467;
+    line-height: 1.4;
+    font-family: 'Baskerville Old Face';
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.posts p { 
+    float: left;
+    width: 60%;
+    margin: 0;
+    margin-top: 3%;
+    margin-left: 5%;
+    color: #779874;  
+    font-size: 10px;
+    font-family: 'Lucida Calligraphy';
+}
+
+a {
+   color: #926781;
+   text-decoration: none;
+}
+
+
