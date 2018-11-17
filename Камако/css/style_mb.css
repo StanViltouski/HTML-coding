@@ -142,7 +142,7 @@ body {
 }
 
 .slideOne {
-    background: #eee url(img/blago.jpg);
+    background: #eee url(../img/blago.jpg);
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-position: center;
@@ -152,7 +152,7 @@ body {
 }
 
 .slideTwo {
-    background: #eee url(img/backgroung.png);
+    background: #eee url(../img/backgroung.png);
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-position: center;
@@ -162,7 +162,7 @@ body {
 }
 
 .slideThree {
-    background: #eee url(img/stock.jpg);
+    background: #eee url(../img/stock.jpg);
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-position: center;
@@ -293,4 +293,3 @@ body {
     -webkit-border-radius: 50px;
 }
 
-.circles__cr:hover {cursor: pointer;}
