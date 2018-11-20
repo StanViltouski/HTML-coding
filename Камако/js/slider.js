@@ -12,19 +12,25 @@ window.addEventListener("load", function () {
             containerImg = container,
             containerImgLeft = -1358,
             containerImgStyle = containerImg.style,
-            windowWidth = 0,
+            windowWidth = -1358,
             countCircle = 1,
             activeButton;
             startAutoSlide();
         
-
-          (function resize() {
+ window.addEventListener("resize", resize, false);
+        
+          function resize() {
+              if (window.innerWidth < 800) {windowWidth = -320;} 
+              else if ((window.innerWidth >= 800) && (window.innerWidth <= 1000)) {windowWidth = -800;} 
+              else {windowWidth = - 1358;}
+    };
+                 (function resize4reload() {
               if (window.innerWidth < 800) {windowWidth = -320;} 
               else if ((window.innerWidth >= 800) && (window.innerWidth <= 1000)) {windowWidth = -800;} 
               else {windowWidth = - 1358;}
     }());
       
-
+        
         container.addEventListener("mouseover", stopAutoSlide, false);
         container.addEventListener("mouseout", startAutoSlide, false);
         buttonLeft.addEventListener("mouseover", stopAutoSlide, false);
@@ -112,7 +118,7 @@ window.addEventListener("load", function () {
                     bkgCircle(); 
                         
                      
-                    }, 12000);
+                    }, 2000);
                 }
             };
         
