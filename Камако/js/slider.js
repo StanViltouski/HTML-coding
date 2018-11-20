@@ -118,7 +118,7 @@ window.addEventListener("load", function () {
                     bkgCircle(); 
                         
                      
-                    }, 2000);
+                    }, 10000);
                 }
             };
         
