@@ -48,10 +48,10 @@ window.addEventListener("load", function () {
             
             switch (e.type) {
                 case "click":
-                    if (containerImg.style.left === "-1358px") {
+                    if (containerImg.style.left === windowWidth+"px") {
 
                         if (activeButton === buttonLeft) {
-                               containerImgLeft = -2716;
+                               containerImgLeft = windowWidth*2;
                                 ++countCircle;
                                bkgCircle(); 
                                                     

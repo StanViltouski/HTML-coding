@@ -194,15 +194,15 @@ body {
 }
 
 .arrows {
-    display: none;
     height: 27px;
-    width: 1358px;
+    width: 800px;
 }
+
 .arrows:hover {cursor: pointer;}
 
 #arrows__arrL {
     position: relative;
-    left: 62px;
+    left: 4.5%;
     z-index: 2;
 }
 
@@ -212,7 +212,7 @@ body {
 
 #arrows__arrR {
     position: relative;
-    left: 1258px;
+    left: 91%;
     z-index: 2;
 }
 
