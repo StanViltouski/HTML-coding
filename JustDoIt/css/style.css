@@ -1,0 +1,437 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #111;
+    font-family: Arial, sans-serif; 
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+
+/*----------header----------*/
+
+.cap {
+    float: left;
+    margin: 0 auto;
+    padding: 50px 50px 30px 35px;
+    background-color: #c2d1f1;
+}
+
+.cap_logoDescription h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.cap_logoDescription a:hover {text-decoration: none;}
+
+.cap_logoDescription h3 {
+    margin-bottom: 30px;
+    padding-left: 16%;
+    font-size: 24px;
+    font-weight: 600;
+    color: #012b48;
+} 
+
+.cap_connect h3 {
+    margin-bottom: 8px;
+    padding: 8px 0 0 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #183f5c; 
+}
+
+.connect_telephone img {padding-right: 5px;}
+
+#main_nav {
+    padding: 0 5% 0 10%;
+    z-index: 100;
+}
+
+.main {
+     clear: both;
+     overflow: hidden;
+     padding: 0 0 80px; 
+     background:#222 url(../img/mainbkg.jpg);
+     background-position: 1500px;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.nav_item {
+    margin: 25px 20px 25px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav_item-size {font-size: 18px;}
+
+.nav_item:hover {
+    text-decoration: none;
+    color: #dc3545;
+}
+
+.nav_item:active {
+    color: #fff;
+    background-color: #000;
+}
+
+#mobile_nav {
+    display: none;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.mobileMenu_link {margin-top: 15px;}
+
+.mobileMenu_link a {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.mobileMenu_link a:hover {
+    text-decoration: none;
+    color: #dc3545;
+}
+
+.dropdown-menu {
+    min-width: 20px;
+    background-color: #000;
+}
+
+.card-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #183f5c;
+}
+
+.main_form {
+    position: relative;
+    top: 30px;
+    left: 3000px;
+    padding: 0;
+    height: 0;
+    opacity: 0.1;
+    z-index: 99;
+}
+
+#show_form {
+   position: relative;
+   top: 145.5px;
+   border-bottom-right-radius: 0px;
+   border-top-right-radius: 0px;
+   z-index: 99;
+}
+
+
+.main_text h1 {
+    padding-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.main_text h3 {
+    margin-bottom: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.55;
+}
+
+
+/*----------sections----------*/
+
+.button_action {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section_area {
+    margin: 0;
+    padding: 80px 50px 80px;
+}
+
+.section_title h2{
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #012b48;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.choice_blocks {
+    padding: 0;
+    margin-bottom: 80px;
+}
+
+.choiceBlocks_item {padding: 50px 50px 0 50px;}
+
+.choiceBlockItem_text h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.choiceBlockItem_text p {
+     font-size: 16px;
+     line-height: 1.4;
+     color: #888;
+}
+
+.courses-bg {background-color: #c2d1f1;}
+
+.courses_blocks {padding: 0 50px;}
+
+.coursesBlocks_item {padding-top: 50px;}
+
+.coursesBlocksItem_content h3 {
+    margin: 0;
+    padding: 30% 0 0 0;
+    height: 100%;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 0.9;
+}
+
+.coursesContent_button {
+     opacity: 0;
+     margin-top: -80px;
+}
+
+.guide_area {
+    position: relative;
+    overflow: hidden;
+}
+
+.guide_text {
+    padding: 80px 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.guide_text {z-index: 1;}
+
+.guide_text h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.55;
+    opacity: none;
+}
+
+.guide_text h3 {
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.55;
+}
+
+.guideArea_background {
+   position: absolute;
+   padding: 0;
+   top: 0;
+   left: 0;
+}
+
+.reviews_blocks {
+    margin-bottom: 80px;
+    padding: 0;
+    background-color: #fff;
+}
+
+.reviewsBlocks_item {padding: 50px 50px 0 50px;}
+
+.reviewsBlockPerson_deson h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.reviewsBlockPerson_deson p {
+    font-size: 14px;
+    color: #888;
+}
+
+.reviewsBlockItem_text h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.reviewsBlockItem_text p {
+     font-size: 16px;
+     line-height: 1.4;
+     color: #888;
+}
+
+.reviews_more img {width: 110px;}
+
+.progress-bg {
+    text-align: center;
+    background-color: #c2d1f1;
+}
+
+.progressBlock_item {padding: 50px 50px 0 50px;}
+
+.progressBlock_item h2 {
+    text-transform: uppercase;
+    color: #012b48;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.progressBlock_item h4 {
+    margin-bottom: 20px;
+    color: #012b48;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.progressBlock_item p {
+     font-size: 16px;
+     color: #012b48;
+     line-height: 1.4;
+}
+
+.cash_area {
+    padding: 80px 0;
+    background-color: #111;
+}
+
+.cash_title h2 {color:#fff;}
+
+.cash_block {
+    margin-bottom: 70px;
+    padding: 50px 0 0 0;
+}
+
+.parners_block {padding: 50px 0 0 0;}
+
+.teachers-bg {
+    text-align: center;
+    background-color: #c2d1f1;
+}
+
+.teachers_block {padding: 0 50px;}
+
+.teachersBlock_item {padding: 50px 0 0 0;}
+
+.teachersBlockItem_desc h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.teachersBlockItem_desc p {
+     font-size: 16px;
+     line-height: 1.4;
+     color: #888;
+}
+
+.contacts_area {
+    margin: 0;
+    padding: 0 50px 0 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contacts_data {
+    margin: 0;
+    padding: 80px 0 30px;
+}
+
+.adress_h1 {
+    margin-bottom: 50px;
+    font-size: 36px;
+    color:  #0d2352;
+}
+
+.adress_h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.4;
+    color:  #0d2352;
+}
+
+.adress_p {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 1.4;
+    color:  #0d2352;
+}
+
+.footer_area {
+    margin: 0;
+    padding: 50px 50px;
+    text-align: center;
+    background-color: #fff; 
+}
+
+.copyright h1 {
+    padding: 0 0 5px 5px;
+    font-size: 16px;
+    color: #0d2352;
+    border-left: 1px solid #dc3545;
+    border-bottom: 1px solid #dc3545;
+    line-height: 1.4;
+}
+
+
+/*----------media----------*/
+
+@media screen and (max-width: 900px) {
+    .guideArea_background {display: none;}
+    .guide_area {
+    background:#222 url(../img/2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .choiceBlocks_item {padding: 50px 0 0 0;}
+    .main_form form, #show_form {display: none;}
+    .courses_blocks {padding: 0;}
+}
+
+@media screen and (max-width: 576px) {
+    .cap {padding-top: 10px;}
+    .nav_item  {display: none;}
+    #mobile_nav {display: block;}
+    .cap_connect {text-align: center !important;}
+    .section_area {padding: 80px 20px 80px;}
+    .reviews_area {padding: 80px 0 80px;}
+    .reviewsBlocks_item {padding: 50px 20px 0 20px;}
+    .cash_area {padding: 80px 0;}
+    .progressBlock_item {padding: 50px 0 0 0;}
+    .parners_block {padding-top: 20px;}
+    .teachers_block {padding: 0;}
+    .contacts_area {padding: 0;}
+    .footer_area {padding: 10px 30px 30px;}
+}
