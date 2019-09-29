@@ -59,6 +59,40 @@
 		return regex.test(email);
 	}
 
+/*==========================================================
+  			scroll menu
+======================================================================*/
+
+		$('.nav_scroll').on('click', function () {
+		    
+		    var widthWindow = $(window).innerWidth();
+		    
+			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+				if(widthWindow <= 992) {
+
+					$('body').removeClass('no-scroll');
+    
+			        $('.nav-menus-wrapper').removeClass('nav-menus-wrapper-open');
+			        $('.nav-overlay-panel').css({
+				        'display': 'none',
+				        'backgroundColor': '',
+			        });
+		        }
+		        
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+            
+		});
+
 
 	/* start on load */
 	$(window).on('load', function () {
