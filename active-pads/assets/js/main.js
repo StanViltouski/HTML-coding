@@ -58,7 +58,7 @@
 		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		return regex.test(email);
 	}
-
+	
 /*==========================================================
   			scroll menu
 ======================================================================*/
@@ -68,30 +68,34 @@
 		    var widthWindow = $(window).innerWidth();
 		    
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-
-				if(widthWindow <= 992) {
-
-					$('body').removeClass('no-scroll');
+			    
+			    if(widthWindow <= 992) {
+			        
+			        $('body').removeClass('no-scroll');
     
 			        $('.nav-menus-wrapper').removeClass('nav-menus-wrapper-open');
+		
 			        $('.nav-overlay-panel').css({
 				        'display': 'none',
 				        'backgroundColor': '',
 			        });
+			        
 		        }
-		        
+
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				
 				if (target.length) {
 					$('html,body').animate({
 						scrollTop: target.offset().top
 					}, 1000);
 					return false;
 				}
+				
 			}
             
 		});
+			
 
 
 	/* start on load */
@@ -233,10 +237,10 @@
 /*==========================================================
   		 video popup init
 ======================================================================*/
-
+    $(document).ready( function() {
 		if ($('.xs-video-popup').length > 0) {
 			$('.xs-video-popup').magnificPopup({
-				disableOn: 700,
+				disableOn: null,
 				type: 'iframe',
 				mainClass: 'mfp-fade',
 				removalDelay: 160,
@@ -244,7 +248,7 @@
 				fixedContentPos: false
 			});
 		}
-
+    });
 
 /*=============================================================
   		 modal popup
@@ -280,22 +284,6 @@
 						dots: true
 					}
 				}
-			});
-		}
-
-
-/*==========================================================
-  			 video popup
-======================================================================*/
-
-		if ($('.xs-map-popup').length > 0) {
-			$('.xs-map-popup').magnificPopup({
-				disableOn: 700,
-				type: 'iframe',
-				mainClass: 'mfp-fade',
-				removalDelay: 160,
-				preloader: false,
-				fixedContentPos: false
 			});
 		}
 
