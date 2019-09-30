@@ -234,6 +234,60 @@
 			}
 		});
 
+/*=============================================================
+  		 header fixed
+=========================================================================*/
+
+$(function () {
+
+  $(window).on('scroll', function() {
+
+  	var headerHeight = parseInt($('.xs-menus').css('height')),
+  		widthWindow = $(window).innerWidth(),
+    	scrollValue = $(window).scrollTop();
+
+    if(widthWindow > 992) {
+    
+      	if (scrollValue > headerHeight) {
+
+        	$('.xs-menus ').addClass('fixed-top').css({
+        	'backgroundColor' : '#fff',
+        	'padding' : '0 5%',
+       	});
+
+      	} else {
+
+        	$('.xs-menus ').removeClass('fixed-top').css({
+        	'backgroundColor' : '',
+        	'padding' : '',
+        	});
+   		}
+   	}
+
+   	if(widthWindow <= 992) {
+
+   		if (scrollValue > headerHeight) { 
+
+   			$('.xs_nav-portrait').addClass('fixed-top').css({
+   				'position' : 'fixed',
+   				'backgroundColor' : '#fff',
+   			});
+
+   		} else {
+
+   			$('.xs_nav-portrait').removeClass('fixed-top').css({
+   				'position' : 'relative',
+   				'backgroundColor' : '',
+   			});
+   		}
+
+   	}  			
+
+  });
+
+});
+
+
 /*==========================================================
   		 video popup init
 ======================================================================*/
