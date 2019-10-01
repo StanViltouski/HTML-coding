@@ -232,7 +232,7 @@ p {
 
 .nav-menus-wrapper .nav-menu {padding-right: 55px;}
 
-.nav-header {padding: 0 12px;}
+.nav-header {padding-right: 15px;}
 
 .nav-header > .nav-brand {
   padding: 0px;
@@ -533,6 +533,7 @@ p {
 }
 
 
+
 /* === Answer === */
 
 #answer {padding: 50px 0 120px;}
@@ -547,10 +548,10 @@ p {
 .answer_blocks {padding-top: 60px;}
 
 .answer-info-block {
+  padding: 70px 30px;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  padding: 70px 30px;
   min-height: 366px;
   text-align: center;
   background-color: #FFFFFF;
@@ -580,17 +581,11 @@ p {
 .who_img {text-align: center;}
 
 
-
-
-
-
-
 /* === Program === */
 
 #program {padding: 100px 0 60px;}
 
 .program_content {margin-bottom: 50px;}
-
 
 
 /*=== Video slider ===*/
@@ -635,10 +630,8 @@ p {
 
 #books {padding: 60px 0 40px;}
 
+/*slider*/
 
-/*=================================================
-          15. portfolio slider
-===============================================*/
 .single-portfolio {
   position: relative;
   overflow: hidden;
@@ -743,82 +736,12 @@ p {
   text-align: center;
 }
 
-
 #footer {
   padding-top: 100px;
   background-image: url("/assets/images/bg2.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center bottom;
 }
-
-/* Form */
-
-.footer_form {
-  padding: 45px 0 60px;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.15);
-}
-
-.button_wrapper {
-  width: 100%;
-  text-align: center;
-}
-
-.form_button {
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.form_elements {margin-bottom: 35px;}
-
-.area_inputs {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-control_input {
-  max-width: 300px;
-  height: 53px;
-  align-self: flex-end;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-#xs_contact_name {
-  margin-bottom: 20px;
-}
-
-.form-control:active, .form-control:focus {
-  box-shadow: none;
-  border-color: #b700b7;
-}
-
-.form-control_textarea {
-  max-width: 300px;
-  height: 126px;
-  resize: none;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-.form-control[placeholder] {
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #252525;
-}
-
-#x_contact_massage {padding: 16px 0 0 20px; }
-
-#xs_contact_submit {
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
-}
-
-#xs_contact_submit:active {box-shadow: 0 0 5px 3px rgba(0, 0, 0, .2);}
 
 .footer_info {
   justify-content: space-between;
@@ -857,321 +780,73 @@ p {
 .footerLinks_block:last-child {margin-right: 0;}
 
 
+/* Form */
 
-
-
-
-  
-
-
-
-
-/* === Head === */
-
-.container-flex-reverse{flex-direction: row-reverse;}
-
-.container-flex-reverse .booksContent_slider, .container-flex-reverse .appsContent_slider  {justify-content: flex-start;}
-
-#rev_slider_16_1_wrapper, #rev_slider_16_1 {height: 610px!important;}
-
-#head {
-  height: 610px;
-  background-image: url("/assets/images/dragonfly.png"), url("/assets/images/girl flower.png");
-  background-repeat: no-repeat;
-  background-position: left bottom, right bottom;
+.footer_form {
+  padding: 45px 0 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.15);
 }
 
-.head_title {
-  padding-top: 100px;
-  margin-bottom: 20px;
-}
-
-.head_content {margin-bottom: 50px;}
-
-.head_button a {
-  position: relative;
-  display: inline-block;
-  padding: 15px 50px;
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.18px;
-  color: #287eff;
-  border: 2px solid #287eff;
-  border-radius: 30px;
-  z-index: 2;
-}
-
-.head_button a:hover {
-  color: #fff;
-  background-color: #287eff;
-}
-
-
-
-/*=== Our Books ===*/
-
-
-.books_imgTitle {
-  margin-bottom: 40px;
+.button_wrapper {
+  width: 100%;
   text-align: center;
 }
 
-.books_title {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 85px;
-  text-align: center;
-}
-
-.books_title h2 {align-self: center;}
-
-.booksContent_slider, .appsContent_slider{padding-top: 75px;}
-
-.booksContent_slider, .appsContent_slider {
-  display: flex;
-  justify-content: center;
-}
-
-.booksContent_description {padding-top: 140px;}
-
-.booksContentDescription_title {margin-bottom: 20px;}
-
-.booksContentDescription_par {margin-bottom: 40px;}
-
-.booksContentDescription_action {display: block;}
-
-.button_view {
-  margin-right: 30px;
+.form_button {
   display: inline-block;
-  padding: 15px 33px;
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.18px;
-  color: #ffffff;
-  border-radius: 100px;
-  box-shadow: 0 5px 15px 0 rgba(237, 66, 100, 0.3);
-  background-image: linear-gradient(to right, #ed4264, #ffdc26);
-}
-
-.button_view:active {background-image: linear-gradient(to left, #ed4264, #ffdc26);}
-
-.button_view:hover {color: #fff;}
-
-
-/*About slider*/
-
-.about-slider .single-slider {
-  width: 260px;
-  height: 340px;
-}
-
-.about-slider-wraper .about-slider {
-  background-image: url(/assets/images/ipad-vertical.png);
-  background-repeat: no-repeat;
-  background-position: center; 
-  padding: 44px 37px 0 39px;
-  width: 336px!important;
-  height: 450px;
-}
-
-.owl-dots {
-  padding-top: 50px;
   margin: 0 auto;
-  width: 64px;
 }
 
-.owl-carousel button.owl-dot{
-  margin-right: 10px;
-  width: 12px; 
-  height: 12px; 
-  border-radius: 50%;
-  border: 1px solid #287eff;
-}
+.form_elements {margin-bottom: 35px;}
 
-.owl-carousel button.owl-dot:last-child {
-  margin-right: 0;
-}
-
-.owl-carousel button.owl-dot.active{
-  width: 20px;
-  height: 20px;
-  background-image: linear-gradient(to top, #287eff, #3edcff); 
-  border: none;
-
-}
-
-.about-slider-wraper .owl-carousel .owl-item > .single-slider > img {width: 100%;}
-
-
-
-
-
-
-/*=== Snow Queen ===*/
-
-#snow_queen {
-  width: 100%;
-  height: 655px;
-  background-image: url("/assets/images/shoes.jpg"), url("/assets/images/girl.jpg"), 
-  url("/assets/images/sleigh.jpg");
-  background-repeat: no-repeat;
-  background-position: 0px 541px, right 260px, right 110px;
-}
-
-
-/*=== Duckling ===*/
-
-#duckling {
-  width: 100%;
-  height: 655px;
-  background-image: url("/assets/images/duck.png"), url("/assets/images/bg2.jpg");
-  background-repeat: no-repeat;
-  background-position: 80px 190px, 0px 0px;
-}
-
-
-/*=== Thunder ===*/
-
-#thunder {
-  width: 100%;
-  height: 655px;
-  background-image: url("/assets/images/tinder-box-bg-illustration.jpg");
-  background-repeat: no-repeat;
-  background-position: right 0px;
-}
-
-
-/*=== Flax ===*/
-
-#flax {
-  width: 100%;
-  height: 655px;
-  background-image: url("/assets/images/bg3.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
-}
-
-.flaxImg_overlay {position: absolute;}
-
-.flaxImg_overlay img{
-  position: relative;
-  top: 160px;
-  left: 0px;
-  z-index: 99;
-}
-
-
-/* ===London ===*/
-
-#london {
-  width: 100%;
-  height: 655px;
-  background-image: url("/assets/images/phone london.png"), url("/assets/images/bg-london.jpg");
-  background-repeat: no-repeat;
-  background-position: 970px 158px, 645px 140px;
-}
-
-
-/*=== Unicorn ===*/
-
-#unicorn {
-  width: 100%;
-  height: 655px;
-  background-image: url("/assets/images/bg4.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
-}
-
-.hyppoImg_overlay {position: absolute;}
-
-.hyppoImg_overlay img {
-  position: relative;
-  top: 65px;
-  left: 110px;
-  z-index: 99;
-}
-
-
-
-/*=== Apps ===*/
-
-#apps {
-  padding: 75px 0 80px 0;
-  width: 100%;
-  height: 950px;
-  background-image: url("/assets/images/presents.png");
-  background-repeat: no-repeat;
-  background-position: 1150px 472px;
-}
-
-.appsImg_overlay {position: absolute;}
-
-.appsImg_overlay img{
-  position: relative;
-  top: 170px;
-  left: 1080px;
-  z-index: 99;
-}
-
-.apps_title {
+.area_inputs {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  flex-direction: column;
 }
 
-.apps_imgTitle {
-  margin-bottom: 55px;
-  text-align: center;
+.form-control_input {
+  max-width: 300px;
+  height: 53px;
+  align-self: flex-end;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+#xs_contact_name {margin-bottom: 20px;}
 
-/*Apps slider*/
-
-.appsContent_slider {padding-top: 150px;}
-
-.apps-slider .single-slider {
-  width: 351px;
-  height: 266px;
+.form-control:active, .form-control:focus {
+  box-shadow: none;
+  border-color: #b700b7;
 }
 
-.apps-slider-wraper .apps-slider {
-  background-image: url(/assets/images/ipad-horizontal.png);
-  background-repeat: no-repeat;
-  background-position: center; 
-  padding: 29px 47px 0 65px;
-  width: 463px;
-  height: 330px;
+.form-control_textarea {
+  max-width: 300px;
+  height: 126px;
+  resize: none;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.apps-slider-wraper .owl-carousel .owl-item > .single-slider > img {width: 100%;}
-
-
-/* === Dragon ===*/
-
-#dragon {
-  width: 100%;
-  height: 655px;
-  background-image: url("/assets/images/bg5.jpg");
-  background-repeat: no-repeat;
-  background-position: left top;
+.form-control[placeholder] {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #252525;
 }
 
+#x_contact_massage {padding: 16px 0 0 20px; }
 
-/*=== Dragon Stone ===*/
-
-#dragon_stone{
-  width: 100%;
-  height: 655px;
-  background-image: url("/assets/images/dragon.jpg");
-  background-repeat: no-repeat;
-  background-position: right 97px;
+#xs_contact_submit {
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .2);
 }
+
+#xs_contact_submit:active {box-shadow: 0 0 5px 3px rgba(0, 0, 0, .2);}
+
 
 
 

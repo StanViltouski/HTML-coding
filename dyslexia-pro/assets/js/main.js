@@ -284,6 +284,7 @@ $(function () {
 
    			$('.xs_nav-portrait').addClass('fixed-top').css({
    				'position' : 'fixed',
+   				'padding-left' : '15px',
    				'backgroundImage' : 'linear-gradient(to right, #660066, #b700b7)',
    			});
 
@@ -291,6 +292,7 @@ $(function () {
 
    			$('.xs_nav-portrait').removeClass('fixed-top').css({
    				'position' : 'relative',
+   				'padding' : '',
    				'backgroundImage' : '',
    			});
    		}
