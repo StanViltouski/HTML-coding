@@ -462,7 +462,7 @@ p {
 
 #head {
   height: 610px;
-  background-image: url("HTML-coding/active-pads/assets/images/dragonfly.png"), url("HTML-coding/active-pads/assets/images/girl flower.png");
+  background-image: url("/HTML-coding/active-pads/assets/images/dragonfly.png"), url("/HTML-coding/active-pads/assets/images/girl flower.png");
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
 }
@@ -504,7 +504,7 @@ p {
   padding: 30px 0 80px 0;
   width: 100%;
   height: 950px;
-  background-image: url("HTML-coding/active-pads/assets/images/sitting girl.png"), url("HTML-coding/active-pads/assets/images/bg1.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/sitting girl.png"), url("/HTML-coding/active-pads/assets/images/bg1.jpg");
   background-repeat: no-repeat;
   background-position: 90px 470px, 0px 310px;
 }
@@ -567,7 +567,7 @@ p {
 }
 
 .about-slider-wraper .about-slider {
-  background-image: url(HTML-coding/active-pads/assets/images/ipad-vertical.png);
+  background-image: url("/HTML-coding/active-pads/assets/images/ipad-vertical.png");
   background-repeat: no-repeat;
   background-position: center; 
   padding: 44px 37px 0 39px;
@@ -645,8 +645,8 @@ p {
 #snow_queen {
   width: 100%;
   height: 655px;
-  background-image: url("HTML-coding/active-pads/assets/images/shoes.jpg"), url("HTML-coding/active-pads/assets/images/girl.jpg"), 
-  url("HTML-coding/active-pads/assets/images/sleigh.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/shoes.jpg"), url("/HTML-coding/active-pads/assets/images/girl.jpg"), 
+  url("/HTML-coding/active-pads/assets/images/sleigh.jpg");
   background-repeat: no-repeat;
   background-position: 0px 541px, right 260px, right 110px;
 }
@@ -657,7 +657,7 @@ p {
 #duckling {
   width: 100%;
   height: 655px;
-  background-image: url("HTML-coding/active-pads/assets/images/duck.png"), url("HTML-coding/active-pads/assets/images/bg2.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/duck.png"), url("/HTML-coding/active-pads/assets/images/bg2.jpg");
   background-repeat: no-repeat;
   background-position: 80px 190px, 0px 0px;
 }
@@ -668,7 +668,7 @@ p {
 #thunder {
   width: 100%;
   height: 655px;
-  background-image: url("HTML-coding/active-pads/assets/images/tinder-box-bg-illustration.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/tinder-box-bg-illustration.jpg");
   background-repeat: no-repeat;
   background-position: right 0px;
 }
@@ -679,7 +679,7 @@ p {
 #flax {
   width: 100%;
   height: 655px;
-  background-image: url("HTML-coding/active-pads/assets/images/bg3.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/bg3.jpg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -699,7 +699,7 @@ p {
 #london {
   width: 100%;
   height: 655px;
-  background-image: url("HTML-coding/active-pads/assets/images/phone london.png"), url("HTML-coding/active-pads/assets/images/bg-london.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/phone london.png"), url("/HTML-coding/active-pads/assets/images/bg-london.jpg");
   background-repeat: no-repeat;
   background-position: 970px 158px, 645px 140px;
 }
@@ -710,7 +710,7 @@ p {
 #unicorn {
   width: 100%;
   height: 655px;
-  background-image: url("HTML-coding/active-pads/assets/images/bg4.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/bg4.jpg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -732,7 +732,7 @@ p {
   padding: 75px 0 80px 0;
   width: 100%;
   height: 950px;
-  background-image: url("HTML-coding/active-pads/assets/images/presents.png");
+  background-image: url("/HTML-coding/active-pads/assets/images/presents.png");
   background-repeat: no-repeat;
   background-position: 1150px 472px;
 }
@@ -768,7 +768,7 @@ p {
 }
 
 .apps-slider-wraper .apps-slider {
-  background-image: url(HTML-coding/active-pads/assets/images/ipad-horizontal.png);
+  background-image: url("/HTML-coding/active-pads/assets/images/ipad-horizontal.png");
   background-repeat: no-repeat;
   background-position: center; 
   padding: 29px 47px 0 65px;
@@ -784,7 +784,7 @@ p {
 #dragon {
   width: 100%;
   height: 655px;
-  background-image: url("HTML-coding/active-pads/assets/images/bg5.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/bg5.jpg");
   background-repeat: no-repeat;
   background-position: left top;
 }
@@ -795,7 +795,7 @@ p {
 #dragon_stone{
   width: 100%;
   height: 655px;
-  background-image: url("HTML-coding/active-pads/assets/images/dragon.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/dragon.jpg");
   background-repeat: no-repeat;
   background-position: right 97px;
 }
@@ -807,7 +807,7 @@ p {
   padding: 80px 0;
   width: 100%;
   height: 565px;
-  background-image: url("HTML-coding/active-pads/assets/images/flower.png"), url("HTML-coding/active-pads/assets/images/houses-bg.jpg");
+  background-image: url("/HTML-coding/active-pads/assets/images/flower.png"), url("/HTML-coding/active-pads/assets/images/houses-bg.jpg");
   background-repeat: no-repeat;
   background-position: right bottom, left bottom;
   text-align: center;
