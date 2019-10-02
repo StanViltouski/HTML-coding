@@ -10,7 +10,7 @@ html {
 body {
   margin: 0 auto;
   padding: 0;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -436,21 +436,20 @@ p {
 
 
 
-
 /* === Header ===*/
 
 
 /*Hover Effect for header-menu*/
 
 .xs-header {
-   padding: 0 0 340px 0;
-   background-image: url(/assets/images/header-white-letters.png), linear-gradient(to right, #660066, #b700b7);
-   background-repeat: no-repeat;
-   background-position: center bottom, left top;
+  padding: 0 0 340px 0;
+  background-image: url(/assets/images/header-white-letters.png), linear-gradient(to right, #660066, #b700b7);
+  background-repeat: no-repeat;
+  background-position: center bottom, left top;
 }
 
 .xs-header.header-style2 .xs-menus .nav-menu > li > a:after {
-  margin-top: 15px;
+  margin-top: 15.5px;
   border-radius: 5.5px;
   background-color: #ff2fff;
   display: block;
@@ -564,7 +563,11 @@ p {
 
 .answer-info-block-content {margin-bottom: 15px;}
 
-.answer-info-block-title {margin-bottom: 10px;}
+.answer-info-block-title {
+  margin-bottom: 10px;
+  height: 25px;
+  overflow: hidden;
+}
 
 .answer-info-block .answer-info-img {margin-bottom: 25px;}
 
@@ -603,7 +606,6 @@ p {
 .img-play {
   display: block;
   margin: 0 auto;
-  width: 100px!important;
 }
 
 .program-intro-video .slider-video-img{
@@ -737,10 +739,10 @@ p {
 }
 
 #footer {
-  padding-top: 100px;
+  padding-top: 88px;
   background-image: url("/assets/images/bg2.png");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
 }
 
 .footer_info {

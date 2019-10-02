@@ -101,6 +101,7 @@
 	/* start on load */
 	$(window).on('load', function () {
 
+
 /*=============================================================
   		 portfolio slider
 =========================================================================*/
@@ -154,19 +155,6 @@
 				$(".xs-hidden-menus").data("xs_nav").toggleOffcanvas();
 			});
 		}
-
-		var widthWindow = $(window).innerWidth(),
-		 	elementsMenu = $('.nav-menu li a, .lang-title'),
-			buttonMobile = $('.button-request-mob');
-
-		if(widthWindow <= 992) {
-			$(elementsMenu).css('color', '#252525');
-			$(buttonMobile).css({
-				'backgroundColor' : '#ff2fff',
-				'border' : '1px solid #ff2fff',
-			})
-		}
-
 
 
 /*==========================================================
@@ -234,7 +222,7 @@
 						'x_contact_massage': x_contact_massage.val()
 					},
 					success: function success(result) {
-						xs_contact_submit.after('<p class="xpeedStudio_success_message">' + result + '</p>').hide().fadeIn();
+						xs_contact_submit.after('<p class="xpeedStudio_success_message pt-3 text-success">' + result + '</p>').hide().fadeIn();
 
 						setTimeout(function () {
 							$(".xpeedStudio_success_message").fadeOut(1000, function () {
@@ -247,6 +235,13 @@
 				});
 			}
 		});
+
+/*=============================================================
+  		 reset form
+=========================================================================*/
+
+      $('#xs-contact-form')[0].reset();
+
 
 /*=============================================================
   		 header fixed
@@ -339,77 +334,6 @@ $(function () {
 			});
 		}
 =========================================================================*/
-/*==========================================================
-  			 product slider
-======================================================================*/
-
-		if ($('.product-slider, .about-slider, .apps-slider').length > 0) {
-			$('.product-slider, .about-slider, .apps-slider').myOwl({
-				dots: true,
-				responsive: {
-					0: {
-						dots: false
-					},
-					991: {
-						dots: true
-					}
-				}
-			});
-		}
-
-/*==========================================================
-  			 rev_slider_16_1_wrapper"
-======================================================================*/
-
-		var revapi16, tpj;
-		(function () {
-			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad);else onLoad();
-
-			function onLoad() {
-				if (tpj === undefined) {
-					tpj = jQuery;if ("off" == "on") tpj.noConflict();
-				}
-				if (tpj("#rev_slider_16_1").revolution == undefined) {
-					revslider_showDoubleJqueryError("#rev_slider_16_1");
-				} else {
-					revapi16 = tpj("#rev_slider_16_1").show().revolution({
-						sliderType: "hero",
-						jsFileLocation: "",
-						sliderLayout: "fullwidth",
-						dottedOverlay: "none",
-						delay: 9000,
-						navigation: {},
-						responsiveLevels: [1240, 1024, 778, 480],
-						visibilityLevels: [1240, 1024, 778, 480],
-						gridwidth: [1240, 1024, 778, 480],
-						gridheight: [868, 768, 960, 720],
-						lazyType: "none",
-						parallax: {
-							type: "mouse",
-							origo: "enterpoint",
-							speed: 400,
-							speedbg: 0,
-							speedls: 0,
-							levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
-							disable_onmobile: "on"
-						},
-						shadow: 0,
-						spinner: "spinner0",
-						autoHeight: "off",
-						disableProgressBar: "on",
-						hideThumbsOnMobile: "off",
-						hideSliderAtLimit: 0,
-						hideCaptionAtLimit: 0,
-						hideAllCaptionAtLilmit: 0,
-						debugMode: false,
-						fallbacks: {
-							simplifyAll: "off",
-							disableFocusListener: false
-						}
-					});
-				}; /* END OF revapi call */
-			}; /* END OF ON LOAD FUNCTION */
-		})(); /* END OF WRAPPING FUNCTION */
 
 	}); // end ready function
 
