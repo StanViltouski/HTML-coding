@@ -1,8 +1,6 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
-  .xs-menus .nav-menu>li>a {padding: 53px 0px;}
-
   .xs-menus .nav-menu>li {margin-right: 17px;}
 
   .nav-brand img, .footer_logo img {width: 155px;}
@@ -10,7 +8,6 @@
   .hover-content-button {padding: 12px 25px;}
 
 }
-
 
 
 @media (max-width: 992px) { 
@@ -58,8 +55,8 @@
   .header-transparent .xs-menus .nav-menu>li>a {color: #333333;}
 
   .header-transparent .nav-toggle:before {
-    background-color: #333333;
-    box-shadow: 0 0.5em 0 0 #333333, 0 1em 0 0 #333333;
+    background-color: #FFF;
+    box-shadow: 0 0.5em 0 0 #FFF, 0 1em 0 0 #FFF;
   }
 
   .header-transparent {background-color: rgba(255, 255, 255, .1);}
@@ -94,7 +91,7 @@
 
   p {font-size: 14px;}
 
-  .xs-header {padding-bottom: 200px;}
+  .xs-header {padding-bottom: 100px;}
 
   .headerContent_title {padding-top: 40px;}
 
@@ -142,7 +139,7 @@
 @media (max-width: 767px) {
 
   .xs-header {
-    background-image: url(/assets/images/header-white-letters-1200.png), linear-gradient(to right, #660066, #b700b7);
+    /*background-image: url(/assets/images/header-white-letters-1200.png), linear-gradient(to right, #660066, #b700b7);*/
   }
 
   h2 {margin-bottom: 15px;}
@@ -163,6 +160,8 @@
   }
 
   .xs-menu-tools {display: none;}
+
+  /*.header_video_wrapper {display: none;} */
   
   .form-control_input {
     margin-bottom: 20px;
@@ -246,9 +245,9 @@
 
 @media (max-width: 576px) {
 
-  .headerContent_title {padding-top: 20px;}
+  .headerContent_title {padding-top: 0px;}
 
-  h1 {font-size: 36px;}
+  h1 {font-size: 32px;}
 
   h2 {
     margin-bottom: 10px;
