@@ -445,7 +445,7 @@ p {
 
 .xs-header {
   padding: 0 0 340px 0;
-  background-image: url(/assets/images/header-white-letters.png);
+  background-image: url(/HTML-coding/dyslexia-pro/assets/images/header-white-letters.png);
   background-repeat: no-repeat;
   background-position: center bottom;
   width: 100%;
@@ -546,6 +546,11 @@ p {
  width:640px !important;
 }      
 }
+@media (max-width: 1024px){
+.header_video {
+ margin: 0px auto 0;
+}      
+}
 
 /* === Problem === */
 
@@ -614,7 +619,7 @@ p {
 #who {
   max-width: 100%;
   padding: 135px 0 65px 0;
-  background-image: url("/assets/images/who BG.png");
+  background-image: url("/HTML-coding/dyslexia-pro/assets/images/who BG.png");
   background-position: center top;
 }
 
@@ -778,7 +783,7 @@ p {
 
 #footer {
   padding-top: 88px;
-  background-image: url("/assets/images/bg2.png");
+  background-image: url("/HTML-coding/dyslexia-pro/assets/images/bg2.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
