@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/StanViltouski/HTML-coding/blob/master/master/dyslexia-pro/assets/images/screenshot.png?raw=true"></p>
+<p align="center"><img src="https://github.com/StanViltouski/HTML-coding/blob/master/dyslexia-pro/assets/images/screenshot.png?raw=true"></p>
 
 <h2 align="center"> Dyslexia.Pro </h2>
 
