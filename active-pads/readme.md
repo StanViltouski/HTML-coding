@@ -35,17 +35,15 @@
 - Submit form;
 
 
-## Feedback
-
-- [vyts_vyts@mail.ru](mailto:vyts_vyts@mail.ru)
-- [Stan Viltouski](https://vk.com/stanviltouski)
-
-
 ## Release
 
 - [ActivePads](http://activepads.com)
 
 
-## Copyright
+## Feedback
+
+- [vyts_vyts@mail.ru](mailto:vyts_vyts@mail.ru)
+- [Stan Viltouski](https://vk.com/stanviltouski)
+
 
 <p align="center">Copyright@2019 Stanislau Viltouski</p>
