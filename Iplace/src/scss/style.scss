@@ -1,0 +1,200 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "reset.scss";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/*Public*/
+
+body {
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1920px;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+p {
+	color: #fefefe;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+
+
+/*Header*/
+
+header {
+	height: 900px;
+	background: #183149 url('/img/sea.jpg') center;	
+}
+
+.background_image {
+	position: absolute;
+	top: 165px;
+	left: 565px;
+}
+
+.header_container {padding-top: 27px;}
+
+.header_card {
+	float: left;
+	margin: -27px 110px 0 -100px;
+	padding: 22px 70px 85px 70px;
+	width: 515px;
+	background-image: linear-gradient(to bottom, #31d5db, #57aaf7);
+}
+
+.headerCard_hat {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.headerCard_logo img {
+	padding-left: 35px;
+	height: 85px;
+}
+
+.headerCard_lang {
+	display: flex;
+	padding-top: 23px;
+	a {
+		margin-right: 28px;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}
+
+.headerCard_completion {margin-bottom: 55px;}
+
+.headerCardCompletion_title {margin-bottom: 25px;}
+
+.headerCardCompletion_times {display: flex;}
+
+.headerCardCompletion_block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 25%;
+	height: 95px;
+	border-top: solid 2px #ffffff;
+	border-bottom: solid 2px #ffffff;
+	border-left: solid 2px #ffffff;
+	text-align: center;
+	&:last-child {
+			border-right: solid 2px #ffffff;
+		}
+	span {
+		margin-bottom: 15px;
+		font-size: 15px;
+		color: #fff;
+	}
+}
+
+.headerCard_desc {
+	position: relative;
+	margin-bottom: 70px;
+	z-index: 2;
+	h3 {margin-bottom: 20px;}
+	span {
+		color: #fff;
+		font-size: 15px;
+  		font-weight: 500;
+  		font-stretch: normal;
+  		font-style: normal;
+  		line-height: 1.81;
+  		letter-spacing: -0.16px;
+	}
+}
+
+.headerCard_button {
+	a {
+		padding: 20px 37px;
+		font-size: 16px;
+		font-weight: 800;
+		color: #fff;
+		border-radius: 35px;
+		border: solid 4px #ffffff;
+		text-transform: uppercase;
+		img {
+			padding-left: 8px;
+		}
+	}
+}
+
+.header_offer {
+	display: flex;
+	float: left;
+	min-height: 52px;
+	p {
+		margin-right: 18px;
+		align-self: center;
+	}
+	img {
+		height: 28px;
+		align-self: center;
+	}
+}
+
+.header_button {
+	float: right;
+	border-radius: 30px;
+	background-color: #fff;
+	a {
+		display: flex;
+		padding: 14px 28px;
+		font-size: 18px;
+		font-weight: 500;
+		color: #495c75;
+		span {
+			margin-right: 13px;
+			align-self: center;
+		}
+		img {
+			height: 24px;
+		}
+	}
+	
+}
+
+
+/*Investors*/
+
+.investors {padding-top: 120px;}
+
+.investors_title {
+	padding-left: 0px;
+	h2 {
+  		font-stretch: normal;
+  		font-style: normal;
+ 		line-height: normal;
+  		letter-spacing: normal;
+		color: #223f59;
+	}
+}
+
+.investorsCards_block {
+  width: 370px;
+
+  height: 200px;
+
+  box-shadow: 0px 13px 24px 0 rgba(34, 63, 89, 0.1);
+
+  background-color: #ffffff;
+}
+
