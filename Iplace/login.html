@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Login</title>
+	<link rel="stylesheet" href="build/css/styles.css">
+</head>
+<body>
+
+	<section class="login">
+		<div class="wrapper">
+			<div class="container">
+
+				<div id="headerCardLang_form" class="headerCard_lang">
+					<a href="{{ LaravelLocalization::getLocalizedURL('ru') }}"><p class="lang-active">RU</p></a>
+					<a href="{{ LaravelLocalization::getLocalizedURL('en') }}"><p>EN</p></a>
+					<a href="{{ LaravelLocalization::getLocalizedURL('de') }}"><p>DE</p></a>
+				</div>
+
+				<div class="login_form">
+					<div class="loginForm_title">
+						<img src="img/logo_integrity.svg" alt="logo">
+						<h2>Вход <br>в систему</h2>
+					</div>
+					
+					<div class="loginForm_enter">
+						<form id="login_form" action="/" method="post">
+
+							<input type="text" name="login" placeholder="Логин">
+							<input type="text" name="pass" placeholder="Пароль">
+
+							<button type="submit" name="submit" id="submit_button" class="button-request"><p>Войти <img src="img/arrow-invest.svg" alt="arrow invest"></p></button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- My Scripts -->
+	<script src="build/js/main.js"></script>
+
+</body>
+</html>

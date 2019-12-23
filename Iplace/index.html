@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Iplace</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
 	<link rel="stylesheet" href="build/css/styles.css">
+	<script>
+		var date = new Date(2019, 10, 25, 12, 12);
+		/*Year, Month - 1, Day, Hour, Minute*/
+	</script>
 </head>
 <body>
+	
+	<div class="overlay"></div>
 
-	<header>
+	<header class="clearfix">
 		<div class="wrapper header_wrapper">
 			<div class="container header_container">
 
@@ -18,94 +27,749 @@
 					<img src="img/wheal-min.png" alt="wheal">
 				</div>
 		
-					<div class="header_card">
-						<div class="headerCard_hat">
-							<div class="headerCard_logo">
-								<img src="img/logo_integrity.svg" alt="logo">
-							</div>
-							<div class="headerCard_lang">
-								<a href=""><p>RU</p></a>
-								<a href=""><p>EN</p></a>
-								<a href=""><p>DE</p></a>
-								<a href=""><p>LT</p></a>
-							</div>
+				<div class="header_card">
+					<div class="headerCard_hat">
+						<div class="headerCard_logo">
+							<img src="img/logo_integrity.svg" alt="logo">
 						</div>
-
-						<div class="headerCard_completion">
-							<p class="headerCardCompletion_title">До завершения Pre-ICO:</p>
-							<div class="headerCardCompletion_times">
-								<div class="headerCardCompletion_block"> 
-									<span>Дней</span>
-									<h2>12</h2>
-								</div>
-								<div class="headerCardCompletion_block">
-									<span>Часов</span>
-									<h2>02</h2>
-								</div>
-								<div class="headerCardCompletion_block">
-									<span>Минут</span>
-									<h2>36</h2>
-								</div>
-								<div class="headerCardCompletion_block">
-									<span>Секунд</span>
-									<h2>55</h2>
-								</div>
-							</div>
-						</div>
-						
-						<div class="headerCard_desc">
-							<h3>Integrity Place</h3>
-							<span>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</span>
-						</div>
-
-						<div class="headerCard_button">
-							<a href="#">Инвестировать <img src="img/arrow-invest.svg" alt="arrow invest"></a>
+						<div class="headerCard_lang">
+							<a href="{{ LaravelLocalization::getLocalizedURL('ru') }}"><p class="lang-active">RU</p></a>
+							<a href="{{ LaravelLocalization::getLocalizedURL('en') }}"><p>EN</p></a>
+							<a href="{{ LaravelLocalization::getLocalizedURL('de') }}"><p>DE</p></a>
 						</div>
 					</div>
 
-					<div class="header_button">
-						<a href=""><span>Презентация</span><img src="img/pdf.svg" alt="pdf_file"></a>
+					<div class="headerCard_mobile">
+						<div class="header_button">
+							<a href="#"><p>Презентация</p><img src="img/pdf.svg" alt="pdf_file"></a>
+						</div>
+						<div class="header_offer">
+							<a href="#"><p>Презентационная офферта</p> <img src="img/strelka.svg" alt="arrow"></a>
+						</div>
 					</div>
 
-					<div class="header_offer">
-						<p>Презентационная офферта</p> <img src="img/strelka.svg" alt="arrow">
+					<div class="headerCard_completion">
+						<p class="headerCardCompletion_title">До завершения Pre-ICO:</p>
+						<div class="headerCardCompletion_times">
+							<div class="headerCardCompletion_block"> 
+								<span>Дней</span>
+								<h2 class="days">00</h2>
+							</div>
+							<div class="headerCardCompletion_block">
+								<span>Часов</span>
+								<h2 class="hours">00</h2>
+							</div>
+							<div class="headerCardCompletion_block">
+								<span>Минут</span>
+								<h2 class="minutes">00</h2>
+							</div>
+							<div class="headerCardCompletion_block">
+								<span>Секунд</span>
+								<h2 class="seconds">00</h2>
+							</div>
+						</div>
 					</div>
-				
+
+					
+					<div class="headerCard_desc">
+						<h3>Integrity Place</h3>
+						<span>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</span>
+					</div>
+
+					<div class="headerCard_button">
+						<a href="#instruction">Инвестировать <img src="img/arrow-invest.svg" alt="arrow invest"></a>
+					</div>
+				</div>
+
+				<div class="header_button desk_version">
+					<a href="test.txt" download><p>Презентация</p><img src="img/pdf.svg" alt="pdf_file"></a>
+				</div>
+
+				<div class="header_offer desk_version">
+					<a href="test.txt" download><p>Презентационная офферта</p><img src="img/strelka.svg" alt="arrow"></a>
+				</div>
 			</div>
 		</div>
 	</header>
 
+
 	<section class="investors">
 		<div class="wrapper">
-			<div class="container container">
-				<div class="row m-0">
-					<div class="col-4 investors_title">
+			<div class="container">
+				<div class="row">
+
+					<div class="investors_block investors_title first_block-margin">
 						<h2>Наши инвесторы</h2>
 					</div>
-					<div class="col-8 investors_cards">
+					
+					<div class="section_blocks-flex">
+
+						<div class="investors_block investors_cards">
+							<div class="investorsCards_block">
+
+								<div class="investorsCards_block-flex">
+									<div class="investorsCardsBlock_desc investors_desc">
+										<p class="investorsDesc_name">Иван Иванов</p>
+										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+									</div>
+									<div class="investorsCardsBlock_avatar">
+										<img src="img/face.png" alt="investor">
+									</div>
+								</div>
+
+								<div class="investorsBlock_email">
+									<span class="investorsDesk_span investorsDesc_email"><strong>E-mail:</strong> ivan@gmail.com</span>
+								</div>
+
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="investors_block investors_cards">
+							<div class="investorsCards_block">
+
+								<div class="investorsCards_block-flex">
+									<div class="investorsCardsBlock_desc investors_desc">
+										<p class="investorsDesc_name">Иван Иванов</p>
+										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+									</div>
+									<div class="investorsCardsBlock_avatar">
+										<img src="img/face1.png" alt="investor">
+									</div>
+								</div>
+
+								<div class="investorsBlock_email">
+									<span class="investorsDesk_span investorsDesc_email"><strong>E-mail:</strong> ivan@gmail.com</span>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="investors_block investors_cards">
+							<div class="investorsCards_block">
+								<div class="investorsCards_block-flex">
+									<div class="investorsCardsBlock_desc investors_desc">
+										<p class="investorsDesc_name">Иван Иванов</p>
+										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+									</div>
+
+									<div class="investorsCardsBlock_avatar">
+										<img src="img/face.png" alt="investor">
+									</div>
+								</div>
+
+								<div class="investorsBlock_email">
+									<span class="investorsDesk_span investorsDesc_email"><strong>E-mail:</strong> ivan@gmail.com</span>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="investors_block investors_cards">
+							<div class="investorsCards_block">
+								<div class="investorsCards_block-flex">
+									<div class="investorsCardsBlock_desc investors_desc">
+										<p class="investorsDesc_name">Иван Иванов</p>
+										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+									</div>
+									<div class="investorsCardsBlock_avatar">
+										<img src="img/face1.png" alt="investor">
+									</div>
+								</div>
+
+								<div class="investorsBlock_email">
+									<span class="investorsDesk_span investorsDesc_email"><strong>E-mail:</strong> ivan@gmail.com</span>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="investors_block investors_cards">
+							<div class="investorsCards_block">
+								<div class="investorsCards_block-flex">
+									<div class="investorsCardsBlock_desc investors_desc">
+										<p class="investorsDesc_name">Иван Иванов</p>
+										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+									</div>
+									<div class="investorsCardsBlock_avatar">
+										<img src="img/face.png" alt="investor">
+									</div>
+								</div>
+
+								<div class="investorsBlock_email">
+									<span class="investorsDesk_span investorsDesc_email"><strong>E-mail:</strong> ivan@gmail.com</span>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="investors_block investors_cards">
+							<div class="investorsCards_block">
+								<div class="investorsCards_block-flex">
+									<div class="investorsCardsBlock_desc investors_desc">
+										<p class="investorsDesc_name">Иван Иванов</p>
+										<span class="investorsDesk_span investorsDesc_country"><strong>Страна:</strong> Германия</span>
+										<span class="investorsDesk_span investorsDesc_cash"><strong>Сумма вклада:</strong> <div class="investorsDesk_span-blue">23 000 &euro;</div></span>
+									</div>
+									<div class="investorsCardsBlock_avatar">
+										<img src="img/face1.png" alt="investor">
+									</div>
+								</div>
+
+								<div class="investorsBlock_email">
+									<span class="investorsDesk_span investorsDesc_email"><strong>E-mail:</strong> ivan@gmail.com</span>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="investors_block-show">
+						<p attr-data="Скрыть">Показать больше</p>
+						<img src="img/chevron_down.svg" alt="chevron">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="investment">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+
+					<div class="investment_block investmentBlock_received first_block-margin">
+						<h4>Получено инвестиций</h4>
+						<svg id="svg1" version="1.1"
+     						baseProfile="full"
+     						xmlns="http://www.w3.org/2000/svg"
+     						xmlns:xlink="http://www.w3.org/1999/xlink"
+     						width="240" height="240">
+
+     						<circle cx="120" cy="120" r="114" stroke="#4d657a" stroke-width="2" fill="none" />
+     						<circle cx="120" cy="120" r="114" stroke="#fff" stroke-width="2" stroke-dasharray="396 324" stroke-dashoffset="75%" fill="none" />
+     						<circle cx="120" cy="6" r="4" stroke-linecap="round" fill="#fff" />
+     						<circle cx="210" cy="190" r="4" stroke-linecap="round" fill="#fff" />
+
+     						<circle cx="120" cy="120" r="75" stroke="#4d657a" stroke-width="2" fill="none" />
+							<circle id="round_animate" cx="120" cy="120" r="75" stroke="#6caeed" stroke-linecap="round" stroke-width="14" stroke-dasharray="0% 200%" stroke-dashoffset="50%" fill="none"> 
+								
+								<animate 
+								id="round_animation"
+								attributeName="stroke-dasharray"
+								from="0% 200%"
+								to="0% 200%"
+								dur="4s"
+								begin="indefinite"
+								/>
+
+							</circle>
+
+     						<text id="count_investment" font-size="56" font-family="Montserrat" font-weight="bold" text-anchor="middle" x="50%" y="125" stroke="none" fill="#6dd1da" final-amount="360" current-amount="160">0</text>
+							<text font-size="14" font-family="Montserrat" font-weight="bold" text-anchor="middle" x="50%" y="150" stroke="none" fill="#fff">ТЫС ЕВРО </text>
+ 						</svg>
+					</div>
+
+					<div class="section_blocks-flex investment_blocks-flex">
+
+						<div class="investment_block">
+							<div class="investmentCardsBlock_content" attr-data="block_one">
+								<h4>Инвестиционный калькулятор</h4>
+								<img attr-data="img/strelka-white.svg" src="img/strelka-blue.svg" alt="arrow">
+							</div>
+						</div>
+						<div class="investment_block">
+							<div class="investmentCardsBlock_content" attr-data="block_two">
+								<h4>Распределение инвестиций</h4>
+								<img attr-data="img/strelka-white.svg" src="img/strelka-blue.svg" alt="arrow">
+							</div>
+						</div>
+					</div>
+
+					<!-- Slide One -->
+					<div class="container investmentBlock_slide block_one">
 						<div class="row">
-							<div class="col-6 investorsCards_block"></div>
-							<div class="col-6 investorsCards_block"></div>
-							<div class="col-6 investorsCards_block"></div>
-							<div class="col-6 investorsCards_block"></div>
-							<div class="col-6 investorsCards_block"></div>
-							<div class="col-6 investorsCards_block"></div>
+							<div class="blockSlide_close">
+								<img src="img/close.svg" alt="close">
+							</div>
+
+							<div class="col-12 slider_title">
+								<p>Инвестиционный калькулятор Integrity Place</p>
+							</div>
+
+							<div class="col-md-5 col-12 investmentBlockSlide_left">
+								<div class="blockSlide_inner">
+									<div class="row m-0 blockSlideInner_output">
+										<img src="img/icon-1.svg" alt="icon">
+										<div class="blockSlide_int">
+											<span>Сумма инвестиции</span>
+											<output id="ageOutputId">20000</output>
+										</div>
+						 				<div class="trackBar">
+						 				    <input type="range" id="ageInputId" value="20000" min="20000" max="200000" step="10000" >
+						 				</div>
+									</div>
+								</div>
+
+								<div class="blockSlide_inner">
+									<div class="row m-0 blockSlideInner_output">
+										<img src="img/icon-2.svg" alt="icon">
+										<div class="blockSlide_int">
+											<span>Этап развития</span>
+											<output id="ageOutputId2">0</output>
+										</div>
+						 				<div class="trackBar">
+						 				    <input type="range" id="ageInputId2" value="0" min="0" max="8" step="1" >
+						 				</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-7 col-12 investmentBlockSlide_right">
+								<div class="blockSlide_inner blockSlide_profit">
+									<div class="row m-0 blockSlideInner_output">
+										<img src="img/icon-1-small.svg" alt="icon">
+										<div class="blockSlide_int blockSlide_int-small">
+											<span>Прибыль, %</span>
+											<output id="ageOutputId3">0 %</output>
+										</div>
+									</div>
+								</div>
+								<div class="blockSlide_inner blockSlide_profit">
+									<div class="row m-0 blockSlideInner_output">
+										<img src="img/icon-2-small.svg" alt="icon">
+										<div class="blockSlide_int blockSlide_int-small">
+											<span>Чистая прибыль, &euro;</span>
+											<output id="ageOutputId4">0</output>
+										</div>
+									</div>
+								</div>
+								<div class="blockSlide_inner blockSlide_profit">
+									<div class="row m-0 blockSlideInner_output">
+										<img src="img/icon-3-small.svg" alt="icon">
+										<div class="blockSlide_int blockSlide_int-small">
+											<span>Колличество токенов</span>
+											<output id="ageOutputId5">4995</output>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Slide Two -->
+					<div class="container investmentBlock_slide block_two">
+						<div class="row">
+							<div class="blockSlide_close">
+								<img src="img/close.svg" alt="close">
+							</div>
+
+							<div class="col-12 slider_title">
+								<p>Распределение Инвестиционного Капитала</p>
+								<span>Продажа Токенов проводится для обеспечения разработки и продвижения проекта.Капитал, собранный на Pre-ICO, будет распределяться в соответствии с графиком.</span>
+							</div>
+
+							<div class="col-md-5 col-12 investmentBlockSlide_left">
+								<div class="blockSlide_inner">
+									<img src="img/diagramm.svg" alt="block">
+								</div>
+							</div>
+
+							<div class="col-md-7 col-12 investmentBlockSlide_right">
+								<div class="blockSlide_inner blockSlide_list">
+									<ul>
+										<li><img src="img/dot1.png" alt="dot"><span>Разработка <strong>- 60%</strong></span></li>
+										<li><img src="img/dot2.png" alt="dot"><span>Юридические расходы <strong>- 15%</strong></span></li>
+										<li><img src="img/dot3.png" alt="dot"><span>Маркетинг <strong>- 10%</strong></span></li>
+										<li><img src="img/dot4.png" alt="dot"><span>Операционные расходы <strong>- 10%</strong></span></li>
+										<li><img src="img/dot5.png" alt="dot"><span>Партнерства <strong>- 5%</strong></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="instruction" class="instruction">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+
+					<h2 class="instruction_title">Пошаговая инструкция инвестирования</h2>
+
+					<div class="col-12 instruction_steps">
+
+						<div class="instructionSteps_block">
+							<p class="instruction_step"><img src="img/plus-size.svg" attr-data="img/minus-size.svg" alt="icon">Создать крипто-кошелек</p>
+							<div class="instructionSteps_block-hide">
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
+							</div>
+						</div>
+						<div class="instructionSteps_block">
+							<p class="instruction_step"><img src="img/plus-size.svg" alt="icon">Купить токены INTEGRITY</p>
+							<div class="instructionSteps_block-hide">
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="instructionSteps_block">
+							<p class="instruction_step"><img src="img/plus-size.svg" alt="icon">Получить токены INTEGRITY</p>
+							<div class="instructionSteps_block-hide">
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
+							</div>
+						</div>
+						<div class="instructionSteps_block">
+							<p class="instruction_step instruction_step-showsub"><img src="img/plus-size.svg" alt="icon">Получить прибыль</p>
+							<div class="instructionSteps_block-hide">
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
+							</div>
+						</div>
+						<div class="instructionSteps_subblock">
+							<p class="instruction_step"><img class="instruction_step-img" src="img/plus-size.svg" alt="icon"><b class="instruction_step-pos">Если сборы привысят максимум?</b></p>
+							<div class="instructionSteps_block-hide">
+								<div class="instructionStepsBlock_content">
+									<span>После успешного завершения первого этапа ICO, который намечен на <strong>Август-Сентябрь 2020 года</strong>, Вы сможете обменять имеющиеся токены INTEGRITY c <strong>50% надбавкой</strong> от Вашего инвестиционного вклада, либо держать токены в ожидании их роста</span>
+								</div>
+							</div>
+						</div>
+						<div class="instructionSteps_subblock">
+							<p class="instruction_step"><img class="instruction_step-img" src="img/plus-size.svg" alt="icon"><b class="instruction_step-pos">Если не соберется минимальная сумма?</b></p>
+							<div class="instructionSteps_block-hide">
+								<div class="instructionStepsBlock_content">
+									<span>В противном случае, если просле завершения Pre-ICO не будет собрана минимальная сумма в размере 160 тысяч евро, инвестированная Вами сумма, в течении 5 рабочих дней поступит обратно к Вам на счет</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section></section>
-	<section></section>
-	<section></section>
-	<section></section>
 
-	<footer></footer>
+
+	<section class="analysis">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+
+					<div class="analysis_block analysisBlock_text first_block-margin">
+						<h2>SWOT-анализ</h2>
+						<p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+					</div>
+
+					<div class="section_blocks-flex analysis_blocks-flex"> 	
+
+						<div class="analysis_block">
+							<div class="analysisCardsBlock_content">
+								<div class="analysisCardsBlockContent_desc">
+									<p>Сильные стороны</p>
+									<span>Слабые стороны Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</span>
+								</div>
+								<img src="img/swot 1.svg" alt="swot">
+							</div>
+						</div>
+
+						<div class="analysis_block">
+							<div class="analysisCardsBlock_content">
+								<div class="analysisCardsBlockContent_desc">
+									<p>Слабые стороны</p>
+									<span>Слабые стороны Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</span>
+								</div>
+								<img src="img/swot 2.svg" alt="swot">
+							</div>
+						</div>
+
+						<div class="analysis_block">
+							<div class="analysisCardsBlock_content">
+								<div class="analysisCardsBlockContent_desc">
+									<p>Возмоности</p>
+									<span>Слабые стороны Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</span>
+								</div>
+								<img src="img/swot 3.svg" alt="swot">
+							</div>
+						</div>
+
+						<div class="analysis_block">
+							<div class="analysisCardsBlock_content">
+								<div class="analysisCardsBlockContent_desc">
+									<p>Угрозы</p>
+									<span>Слабые стороны Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я.</span>
+								</div>
+								<img src="img/swot 4.svg" alt="swot">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="command">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+
+					<div class="command_block commandBlock_menu first_block-margin">
+						<h2>Команда</h2>
+						<ul class="command_position">
+							<li><p class="commandPosition_item" attr-data="control">Управление</p></li>
+							<li><p class="commandPosition_item" attr-data="development">Разработка</p></li>
+							<li><p class="commandPosition_item" attr-data="marketing">Маркетинг</p></li>
+							<li><p class="commandPosition_item" attr-data="advisers">Советчики</p></li>
+						</ul>
+					</div>
+
+					<div class="section_blocks-flex command_blocks-flex">
+
+					<!-- Development -->
+
+						<div class="command_block commandBlock_activity-preview development">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
+								</div>
+
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="command_block commandBlock_activity-preview development">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face1.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
+								</div>
+
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div> 
+
+					<!-- Control -->
+
+						<div class="command_block commandBlock_activity control">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
+								</div>
+
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+					<!-- Marketing -->
+					
+						<div class="command_block commandBlock_activity marketing">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face1.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
+								</div>
+
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="command_block commandBlock_activity marketing">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face1.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
+								</div>
+
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="command_block commandBlock_activity marketing">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление 	активами.</span>
+								</div>
+
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="command_block commandBlock_activity marketing">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face1.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
+								</div>
+	
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+
+					<!-- Advisers -->
+					
+						<div class="command_block commandBlock_activity advisers">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
+								</div>
+
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+						<div class="command_block commandBlock_activity advisers">
+							<div class="commandCards_block">
+								<div class="commandCardsBlock_avatar">
+									<img src="img/face1.png" alt="investor">
+								</div>
+								<div class="commandCardsBlock_desc command_desc">
+									<p class="commandDesc_name">Михаил Шапкин</p>
+									<p class="commandDesc_position">Финансовый аналитик, бизнес девелопер</p>
+									<span class="commandDesc_role"><strong>Роль:</strong> Стратегия распределения инвестиций</span>
+									<span class="commandDesc_history"><strong>История:</strong> С 2006 года развитие и продажа компаний. Управление активами.</span>
+								</div>
+
+								<div class="commandCardsBlock_contact">
+									<a href="#"><img src="img/fb.svg" alt="facebook"></a>
+									<a href="#"><img src="img/in.svg" alt="linkedin"></a>
+								</div>
+								<div class="line-animation"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+
+					<div class="footer_title">
+						<h2>Партнеры</h2>
+					</div>
+
+					<div class="footer_logos">
+						<div class="footerLogo_one">
+							<a href="#"><img src="img/partner1.svg" attr-data="img/partner1_color.svg" alt="partner"></a>
+							<a href="#"><img src="img/partner2.svg" attr-data="img/partner2_color.svg" alt="partner"></a>
+							<a href="#"><img src="img/partner3.svg" attr-data="img/partner3_color.svg" alt="partner"></a>
+						</div>
+						<div class="footerLogo_two">
+							<a href="#"><img src="img/partner4.svg" attr-data="img/partner4_color.svg" alt="partner"></a>
+							<a href="#"><img src="img/partner5.svg" attr-data="img/partner5_color.svg" alt="partner"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
 
 
 
 	<!-- My Scripts -->
+	
 	<script src="build/js/main.js"></script>
+
 </body>
 </html>
