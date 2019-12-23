@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/StanViltouski/HTML-coding/blob/master/iplace/img/screenshot.png?raw=true"></p>
+<p align="center"><img src="https://github.com/StanViltouski/HTML-coding/blob/master/Iplace/img/screenshot.png?raw=true"></p>
 
 <h2 align="center"> Integrity Place </h2>
 
