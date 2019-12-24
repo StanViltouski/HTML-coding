@@ -31,7 +31,7 @@
 - Submit form;
 
 
-## Release
+## Production
 
 - [Dyslexia](http://dyslexia.pro)
 

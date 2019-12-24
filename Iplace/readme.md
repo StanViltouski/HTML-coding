@@ -29,7 +29,7 @@
 - Countdown counter
 
 
-## Release
+## Production
 
 - [Integrity Place](http://integrity.place)
 
