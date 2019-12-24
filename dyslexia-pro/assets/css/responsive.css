@@ -1,4 +1,5 @@
 
+
 @media (min-width: 992px) and (max-width: 1199px) {
 
   .xs-menus .nav-menu>li {margin-right: 17px;}
@@ -8,6 +9,8 @@
   .hover-content-button {padding: 12px 25px;}
 
 }
+
+@media (max-width: 1024px){.header_video {margin: 0px auto 0;}}
 
 
 @media (max-width: 992px) { 
@@ -78,6 +81,8 @@
 
 @media (max-width: 991px) {
 
+  .xs-header {background-image: url(/HTML-coding/dyslexia-pro/assets/images/header-white-letters-1200.png);}
+
   h1 {font-size: 42px;}
 
   h2 {
@@ -91,7 +96,7 @@
 
   p {font-size: 14px;}
 
-  .xs-header {padding-bottom: 100px;}
+  .xs-header {padding-bottom: 200px;}
 
   .headerContent_title {padding-top: 40px;}
 
@@ -137,10 +142,6 @@
 
 
 @media (max-width: 767px) {
-
-  .xs-header {
-    /*background-image: url(/assets/images/header-white-letters-1200.png), linear-gradient(to right, #660066, #b700b7);*/
-  }
 
   h2 {margin-bottom: 15px;}
 
@@ -244,6 +245,10 @@
 
 
 @media (max-width: 576px) {
+
+  .xs-header {padding-bottom: 180px;}
+
+  .header_video {max-width: 640px;} 
 
   .headerContent_title {padding-top: 0px;}
 

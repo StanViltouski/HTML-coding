@@ -451,10 +451,6 @@ p {
   width: 100%;
 }
 
-@media (max-width: 640px){
-.xs-header {
-  background-size: 220%;}}
-
 .xs-header.header-style2 .xs-menus .nav-menu > li > a:after {
   margin-top: 15.5px;
   border-radius: 5.5px;
@@ -531,28 +527,11 @@ p {
 }
 
 .header_video {
- display: block;
- margin: -200px auto;
- width: 2000px;
-
+  display: block;
+  margin: -200px auto;
+  width: 2000px;
 }                         
 
-
-@media (max-width: 640px){
-
-  .header_video {
-    display: block;
-    margin: -250px auto 0;
-    width: 640px !important;
-  } 
-
-}
-
-@media (max-width: 1024px){
-  .header_video {
-    margin: 0px auto 0;
-  }      
-}
 
 /* === Problem === */
 
@@ -577,9 +556,11 @@ p {
 
 /* === Answer === */
 
-#answer {padding: 50px 0 120px;
-    max-width: 100%;
-    background-color: #FFF;}
+#answer {
+  padding: 50px 0 120px;
+  max-width: 100%;
+  background-color: #fff;
+}
 
 .answer_title {
   width: 100%;
