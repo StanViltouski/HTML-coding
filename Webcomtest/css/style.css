@@ -395,7 +395,7 @@ body {
 	justify-content: space-between;
 }
 
-#cardPrice_cash {
+.cardPrice_cash {
 	font-size: 18px;
 	color: #265c99;
 	text-transform: lowercase;

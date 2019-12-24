@@ -1,23 +1,30 @@
 $(function () {
     
 
-    //scroll по клику (desktop)
-   $('.nav_scroll').on('click', function(e){    
-       	var section = $('section').eq(e.target.id.charAt()).offset().top;
-       console.log(section);
-        $('html').animate({ scrollTop: section+"px"}, 1000); 
-                            
-   });
- 
-     // scroll logo и в mob(Главная)
-      $('.cap_logo, .scroll_head').on('click', function(){$('html').animate({ scrollTop: 0 }, 1000);});
-    
-    //scroll по клику (mobile) 
-   $('.mobNav_scroll').on('click', function(e){    
-       	var section = $('section').eq(e.target.id.charAt()).offset().top;
-        $('html').animate({ scrollTop: section}, 1000); 
-                            
-   });
+/*==========================================================
+        scroll menu
+======================================================================*/
+
+$(function () {
+
+  $('.nav_scroll').on('click', function () {
+      
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+        
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+      
+    }
+           
+  });
+}());
     
     
     //для счетчика в блоке достижения

@@ -4,27 +4,29 @@ $(function() {
   let selectOne;
 
    $('.opt').on('click', function(){
-    select = $(this).attr('id');
-    anim();
+
+      select = $(this).children().attr('href');
+      anim();
   })
 
    $('.opt-1').on('click', function(){
-    selectOne = $(this).attr('id');
-    anim();
+
+      selectOne = $(this).children().attr('href');
+      anim();
   })
 
   function anim() {
     $('.card').hide();
 
-      if(selectOne===undefined) {
+      if(selectOne === undefined) {
 
-        $('.'+select).show(500);
+        $('.' + select).show(500);
 
-    } else if(select===undefined){
+    } else if(select === undefined){
 
-        $('.'+selectOne).show(500);
+        $('.' + selectOne).show(500);
 
-    } else {$('.'+select+'.'+selectOne).show(500);}
+    } else {$('.' + select + '.' + selectOne).show(500);}
 
   }
 
